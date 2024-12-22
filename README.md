@@ -66,16 +66,15 @@ This project is a full-stack task management system that allows users to manage 
 
 3. Create a `.env` file and configure the following variables:
    ```
-   PORT=5000
-   DATABASE_URL=<your_database_ur>
-   JWT_SECRET=<your_jwt_secret>
+   PORT=4400
+   REACT_BASE_URL = http://localhost:4400
    ```
 
 4. Run the backend server:
    ```bash
    npm start
    ```
-   The backend will run on `http://localhost:5000`.
+   The backend will run on `http://localhost:4400`.
 
 ### Frontend Setup
 1. Navigate to the frontend directory:
@@ -92,7 +91,7 @@ This project is a full-stack task management system that allows users to manage 
    ```bash
    npm start
    ```
-   The frontend will run on `http://localhost:3000`.
+   The frontend will run on `http://localhost:4400`.
 
 ---
 

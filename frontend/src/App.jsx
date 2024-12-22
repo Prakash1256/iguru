@@ -1,21 +1,17 @@
-import './App.css'
-import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Login from './components/Login';
-import Tasks from './components/Task';
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+import Dashboard from "./pages/Dashboard";
 
-
-const App = () => {
-  const [token, setToken] = useState('');
-
+function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Login setToken={setToken} />} />
-        <Route path="/tasks" element={<Tasks token={token} />} />
-      </Routes>
-    </Router>
+    <Routes>
+      <Route path="/" element={<Login />} />
+      <Route path="/register" element={<Register />} />
+      <Route path="/dashboard" element={<Dashboard />} />
+    </Routes>
   );
-};
+}
 
 export default App;

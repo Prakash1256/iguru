@@ -54,9 +54,9 @@ This project is a full-stack task management system that allows users to manage 
 ### Backend Setup
 1. Clone the repository:
    ```bash
-   git clone <repository_url>
-   cd <repository_name>
-   cd backend
+   git clone <https://github.com/Prakash1256/iguru.git>
+   cd <iguru>
+   
    ```
 
 2. Install dependencies:
@@ -67,7 +67,7 @@ This project is a full-stack task management system that allows users to manage 
 3. Create a `.env` file and configure the following variables:
    ```
    PORT=5000
-   DATABASE_URL=<your_database_url>
+   DATABASE_URL=<your_database_ur>
    JWT_SECRET=<your_jwt_secret>
    ```
 
